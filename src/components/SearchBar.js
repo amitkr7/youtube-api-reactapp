@@ -5,12 +5,11 @@ class SearchBar extends React.Component {
 
   onInputChange = (event) => {
     this.setState({ text: event.target.value });
-    
   };
 
   onFormSubmit = (event) => {
-      event.preventDefault();
-      this.props.onFormSubmit(this.state.text);
+    event.preventDefault();
+    this.props.onFormSubmit(this.state.text);
   };
 
   render() {
